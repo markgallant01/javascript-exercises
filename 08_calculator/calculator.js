@@ -1,25 +1,36 @@
-const add = function() {
-	
+const add = function(val1, val2) {
+  return val1 + val2;	
 };
 
-const subtract = function() {
-	
+const subtract = function(val1, val2) {
+  return val1 - val2;
 };
 
-const sum = function() {
-	
+const sum = function(arr) {
+  return arr.reduce((accumulator, element) => {
+    return accumulator + element;	
+  }, 0 )};
+
+const multiply = function(arr) {
+  return arr.reduce((accumulator, element) => {
+    return accumulator * element;
+  }, 1);
 };
 
-const multiply = function() {
-
+const power = function(number, power) {
+  let product = 1;
+  for (let i = 0; i < power; i++) {
+    product *= number;
+  }
+  return product;
 };
 
-const power = function() {
-	
-};
-
-const factorial = function() {
-	
+const factorial = function(number) {
+  let product = 1;
+  for (let i = 1; i <= number; i++) {
+    product *= i;
+  }
+  return product;
 };
 
 // Do not edit below this line
